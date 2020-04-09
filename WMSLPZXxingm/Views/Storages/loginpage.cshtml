@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "loginpage";
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Quserylogin</title>
+    <style>
+        .bian {
+            margin-left: 400px;
+        }
+
+        .logo {
+            width: 100%;
+            text-align: center;
+            height: 35px;
+            font-size: 30px;
+            margin-top: 20px;
+            color: #2A8FCD;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">仓储管理系统</div><br />
+    <form action="@Url.Action("login")" method="post">
+        <div class="container jumbotron">
+            <div class="row  bian">
+
+                <div class="col-md-4 text-center form-inline form-group">
+
+                    <label>登陆账号:</label><input type="text" class="form-control" name="LoginId" value="administrator" />
+                </div>
+            </div>
+            <div class="row  bian">
+                <div class="col-md-4 text-center form-inline form-group">
+                    <label>登陆密码:</label><input type="password" class="form-control" name="Password" value="administrator" />
+                </div>
+            </div>
+            <div class="row  bian">
+                <div class="col-md-4 text-center form-inline form-group">
+                    <button class="btn btn-primary" type="submit">登陆</button>
+                    <button class="btn btn-primary" type="reset">重置</button>
+                    <a href="@Url.Action("register")" class="btn btn-success">注册</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
