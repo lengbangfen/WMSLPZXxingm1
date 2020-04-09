@@ -22,5 +22,9 @@ namespace WMSLPZXxingm.Controllers
         {
             return View();
         }
+        public ActionResult ZC()
+        {
+            return View();
+        }
     }
 }
