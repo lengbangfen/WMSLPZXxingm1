@@ -26,5 +26,9 @@ namespace WMSLPZXxingm.Controllers
         {
             return View();
         }
+        public ActionResult AAA()
+        {
+            return View();
+        }
     }
 }
